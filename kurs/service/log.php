@@ -11,10 +11,10 @@
 		if (!empty($user)) {
 			unset($_SESSION['error']);
 			$_SESSION['auth'] = true;
-			header("location:../lists/students_list.php");
+			header("location:../lists/groups.php");
 		} else {
 			$_SESSION['auth'] = false;
-			 $_SESSION['error'] = "Ошибка! Пароль или логин введен неверно";
+			$_SESSION['error'] = "Ошибка! Пароль или логин введен неверно";
 			header("location:../user/login.php");
 		}
 
